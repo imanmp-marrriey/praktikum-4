@@ -1,5 +1,6 @@
 public class AkunBank {
     private int saldo;
+    public static final int SALDO_MINIMAL = 10; // ← non-access modifier (static + final)
 
     // constructor
     public AkunBank(int saldo) {
@@ -30,8 +31,8 @@ public class AkunBank {
     public void tarikTunai(int jumlah) {
         if (jumlah <= 0) {
             System.out.println("Jumlah penarikan harus lebih dari 0");
-        } else if (saldo - jumlah < 10) { // saldo minimal 10
-            System.out.println("Penarikan gagal! Saldo minimal mengendap Rp10");
+        } else if (saldo - jumlah < SALDO_MINIMAL) { // pakai konstanta non-access modifier
+            System.out.println("Penarikan gagal! Saldo minimal mengendap Rp " + SALDO_MINIMAL);
         } else {
             saldo -= jumlah;
             System.out.println("Berhasil tarik tunai Rp " + jumlah);
