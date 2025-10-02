@@ -1,4 +1,4 @@
-public class AkunBank {
+public class AkunBankSetterGetter {
     private String namaPemilik;
     private double saldo;
 
