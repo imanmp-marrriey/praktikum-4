@@ -1,6 +1,6 @@
 public class AkunBankTestSetterGetter {
     public static void main(String[] args) {
-        AkunBank akun1 = new AkunBank("Iman", 100000);
+        AkunBankSetterGetter akun1 = new AkunBankSetterGetter("Iman", 100000);
 
         System.out.println("Pemilik: " + akun1.getNamaPemilik());
         System.out.println("Saldo: Rp" + akun1.getSaldo());

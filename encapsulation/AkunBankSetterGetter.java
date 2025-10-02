@@ -3,7 +3,7 @@ public class AkunBankSetterGetter {
     private double saldo;
 
     // constructor
-    public AkunBank(String namaPemilik, double saldo) {
+    public AkunBankSetterGetter(String namaPemilik, double saldo) {
         this.namaPemilik = namaPemilik;
         this.saldo = saldo;
     }
